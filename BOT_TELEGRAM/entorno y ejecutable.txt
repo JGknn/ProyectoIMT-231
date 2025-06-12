@@ -1,0 +1,8 @@
+conda create -n proyecto_final python=3.13.4 -y
+conda activate proyecto_final
+mkdir entorno_proyecto_final
+cd entorno_proyecto_final
+
+pip install pyinstaller
+pyinstaller --onefile principal_proyecto.py
+conda env export --from-history > environment.yml   
